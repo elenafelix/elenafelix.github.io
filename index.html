@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elena Felix</title>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="css/vendor.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- SVG Icons (hidden) -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="quote-left" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M3.691 6.292C5.094 4.771 7.217 4 10 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.9 2.9 0 0 0 6.925 10H10a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2H3a1 1 0 0 1-1-1v-5l.003-2.919c-.009-.111-.199-2.741 1.688-4.789M20 20h-6a1 1 0 0 1-1-1v-5l.003-2.919c-.009-.111-.199-2.741 1.688-4.789C16.094 4.771 18.217 4 21 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.9 2.9 0 0 0 17.925 10H21a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2" />
+        </symbol>
+
+        <symbol id="arrow-right" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+        </symbol>
+
+        <symbol id="arrow-left" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+        </symbol>
+
+        <symbol id="linkedin" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M17.5 8.999a5.4 5.4 0 0 0-2.565.645A1 1 0 0 0 14 8.999h-4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-5.5a1 1 0 1 1 2 0v5.5a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-7.5a5.507 5.507 0 0 0-5.5-5.5m3.5 12h-2v-4.5a3 3 0 1 0-6 0v4.5h-2v-10h2v.703a1 1 0 0 0 1.781.625A3.483 3.483 0 0 1 21 14.5Zm-14-12H3a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-12a1 1 0 0 0-1-1m-1 12H4v-10h2ZM5.015 1.542a3.233 3.233 0 1 0-.057 6.457h.028a3.233 3.233 0 1 0 .029-6.457m-.029 4.457h-.028a1.222 1.222 0 0 1-1.37-1.228c0-.747.56-1.229 1.427-1.229A1.234 1.234 0 0 1 6.41 4.771c0 .746-.56 1.228-1.425 1.228" />
+        </symbol>
+
+        <symbol id="search" viewBox="0 0 32 32">
+            <path fill="currentColor"
+                d="M19 3C13.488 3 9 7.488 9 13c0 2.395.84 4.59 2.25 6.313L3.281 27.28l1.439 1.44l7.968-7.969A9.922 9.922 0 0 0 19 23c5.512 0 10-4.488 10-10S24.512 3 19 3zm0 2c4.43 0 8 3.57 8 8s-3.57 8-8 8s-8-3.57-8-8s3.57-8 8-8z" />
+        </symbol>
+
+        <symbol id="close" viewBox="0 0 16 16">
+            <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+        </symbol>
+    </svg>
+
+    <!-- Preloader -->
+    <div class="preloader text-white fs-6 text-uppercase overflow-hidden"></div>
+
+    <!-- Navbar -->
+    <nav id="header-nav" class="navbar navbar-expand-lg py-4" data-bs-theme="dark">
+        <div class="container-fluid padding-side">
+            <a class="navbar-brand fw-bold fs-1" style="color: whitesmoke;" href="index.html">Portfolio</a>
+
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav text-center align-items-center justify-content-end flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link active pe-lg-5" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pe-lg-5" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link pe-lg-5 dropdown-toggle" href="portfolio.html" data-bs-toggle="dropdown"
+                                role="button" aria-expanded="false">Portfolio</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="portfolio.html" class="dropdown-item">Main Portfolio</a></li>
+                                <li><a href="portfolio-masonry.html" class="dropdown-item">Portfolio-Masonry</a></li>
+                                <li><a href="portfolio-details.html" class="dropdown-item">Portfolio-Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pe-lg-5" href="contact.html">Contact Me</a>
+                        </li>
+                    </ul>
+
+                    <!-- Social Icons (Mobile Only) -->
+                    <ul class="d-flex d-lg-none list-unstyled justify-content-center mt-4">
+                        <li>
+                            <a class="nav-link mx-2" href="#">
+                                <svg class="social-icon" width="24" height="24">
+                                    <use xlink:href="#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="padding-medium position-relative">
+        <div class="container text-white">
+            <div class="row flex-row-reverse justify-content-center align-items-center">
+                <div class="col-lg-6 text-center" data-aos="fade-up" data-aos-duration="1400">
+                    <div class="position-relative">
+                        <!-- Main Image -->
+                        <img src="Eimages/Glider.jpg" alt="Glider" class="img-fluid rounded-circle w-100 p-5"
+                            style="position: relative; z-index: 1;" />
+
+                        <!-- Border Image centered over the main photo -->
+                        <div class="position-absolute" style="top: 50%; left: 50%; transform: translate(-135%, -50%); z-index: 2;">
+                            <img src="Eimages/circle.png" alt="Animated Border" class="img-fluid rounded-circle animated-border"
+                                style="width: 270%; max-width: none;" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-5">
+                    <p class="letter-space fw-bold fs-1" style="color:whitesmoke;" data-aos="fade-up" data-aos-duration="1000">
+                        Hi, I’m Elena
+                    </p>
+                    <h2 class="banner-size fw-medium display-3 my-4" data-aos="fade-up" data-aos-duration="1200">
+                        Building the Future of Space
+                    </h2>
+                    <p data-aos="fade-up" data-aos-duration="1400">
+                        Welcome! I’m Elena, an aerospace engineer who loves turning ideas into real space tech. I enjoy designing spacecraft, testing them in tough environments, and solving tricky problems that help us explore beyond Earth. I’m always excited to learn new skills, work with great teams, and contribute to projects that make a difference.
+                    </p>
+                    <a href="portfolio.html" class="btn btn-outline-primary mt-4 position-relative pe-5" data-aos="fade-up" data-aos-duration="1600">
+                        view all works
+                        <div class="position-absolute top-50 end-0 translate-middle-y me-3">
+                            <svg class="arrow-right p-1" width="28" height="28">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Section (Desktop Only) -->
+    <section id="socials" class="position-fixed bottom-0 start-0 ms-5 mb-5">
+        <ul class="d-none d-lg-block list-unstyled justify-content-center">
+            <li>
+                <a class="nav-link mb-3" href="https://www.linkedin.com/in/elena-felix" target="_blank" rel="noopener noreferrer">
+                    <svg class="social-icon" width="24" height="24">
+                        <use xlink:href="#linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
