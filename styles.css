@@ -19,8 +19,7 @@ This is main CSS file that contains custom style rules used in this template
 /** Base Styles
 --------------------------------------------------------------*/
 :root {
-  --primary-color: #2f2681;
-  --secondary-color: ;
+  --primary-color: #66FD0F;
   --dark-color: #2D2D2D;
   --white-color: #FFFFFF;
   --grey-color: #777777;
@@ -36,10 +35,9 @@ This is main CSS file that contains custom style rules used in this template
   --bs-body-color-rgb: 53, 53, 53;
   --bs-primary-rgb: 102, 253, 15;
   --bs-secondary-rgb: 249, 246, 243;
-}
 
 /* Fonts */
-:root {
+
   --heading-font: "Space Grotesk", serif;
   --body-font: "Space Grotesk", serif;
 }
@@ -460,4 +458,35 @@ button.filter-button.active {
 button.filter-button:hover {
   background-color: var(--primary-color);
   color: var(--body-text-color);
+}
+.button {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #66FD0F;
+    border: none;
+    color: rgb(10, 10, 10);
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.button span {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* Corrected .form-control shadow style */
+.form-control {
+    box-shadow: 5px 5px var(--primary-color);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: black !important;
+  opacity: 1; /* Ensures full opacity on some browsers */
 }
