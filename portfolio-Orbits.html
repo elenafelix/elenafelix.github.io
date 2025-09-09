@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elena Felix – Burn-Coast-Burn</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader"><div class="loader"></div></div>
+
+  <!-- Navigation -->
+  <nav id="header-nav" class="navbar navbar-expand-lg py-4" data-bs-theme="dark">
+    <div class="container-fluid padding-side">
+      <a class="navbar-brand fw-bold fs-1 text-white" href="index.html">Elena Felix</a>
+      <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Menu</h5>
+          <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link active pe-lg-5" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link pe-lg-5" href="about.html">About</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link pe-lg-5 dropdown-toggle" href="#" data-bs-toggle="dropdown">Portfolio</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="portfolio-masonry.html">Portfolio-Masonry</a></li>
+                <li><a class="dropdown-item" href="portfolio-details.html">Portfolio-Details</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero / Overview Section -->
+  <section id="hero" class="padding-medium position-relative text-white">
+    <div class="container-fluid padding-side text-center">
+      <nav class="breadcrumb d-inline-flex justify-content-center" data-bs-theme="dark" data-aos="fade-up" data-aos-duration="1000">
+        <a class="breadcrumb-item" href="index.html">Home</a>
+        <span class="breadcrumb-item active">Portfolio – Burn-Coast-Burn</span>
+      </nav>
+      <h3 class="display-6 fw-medium mb-3" data-aos="fade-up" data-aos-duration="1200">
+        Burn–Coast–Burn <span class="text-primary">Deorbit Simulation</span>
+      </h3>
+      <p data-aos="fade-up" data-aos-duration="1400">Demonstrate active deorbit control using a high-specific-impulse thruster, transitioning from the initial state to LEO.</p>
+    </div>
+  </section>
+
+  <main class="container my-5">
+    <!-- Key Topics -->
+    <section data-aos="fade-up" data-aos-duration="800">
+      <h3 class="text-primary mb-4">Key Topics</h3>
+      <ul class="fs-5">
+        <li>Modeling gravitational two-body motion and understanding orbital energy</li>
+        <li>Physics-based thrust modeling (Isp, thrust, mass flow rate)</li>
+        <li>Sequencing maneuvers (burn → coast → burn) and deorbit strategy</li>
+      </ul>
+    </section>
+
+    <!-- Assumptions -->
+    <section data-aos="fade-up" data-aos-duration="800" class="mt-4">
+      <h3 class="text-primary mb-4">Assumptions</h3>
+      <ul class="fs-5">
+        <li><strong>Gravitational Model:</strong> Two-body system; excludes drag, J₂, solar/lunar perturbations.</li>
+        <li><strong>Propulsion:</strong> Constant retrograde thrust (6 N), Isp = 5000 s, g₀ = 9.807 m/s².</li>
+        <li><strong>Initial State:</strong> r₀ = [26578, 0, 0] km, v₀ = [0, 3.8726, 0] km/s, mass = 600 kg.</li>
+      </ul>
+    </section>
+
+    <!-- Sequence Description -->
+    <section data-aos="fade-up" data-aos-duration="800" class="mt-4">
+      <h3 class="text-primary mb-4">Burn–Coast–Burn Sequence</h3>
+      <ul class="fs-5">
+        <li><strong>Burn 1:</strong> 3 days of continuous thrust</li>
+        <li><strong>Coast:</strong> 4 days with no thrust</li>
+        <li><strong>Burn 2:</strong> 1 day of continuous thrust</li>
+      </ul>
+    </section>
+
+    <!-- Retrograde Thrust -->
+    <section data-aos="fade-up" data-aos-duration="800" class="mt-4">
+      <h3 class="text-primary mb-4">Retrograde Thrust</h3>
+      <ul class="fs-5">
+        <li>Efficiently reduces orbital velocity, lowering orbital energy.</li>
+        <li>Lowers perigee without wasting fuel on non-productive velocity changes.</li>
+      </ul>
+    </section>
+
+    <!-- Results and Plots -->
+    <section data-aos="fade-up" data-aos-duration="800" class="mt-4">
+      <h3 class="text-primary mb-4">Results</h3>
+      <ul class="fs-5">
+        <li><strong>Fuel used:</strong> 42.2882 kg</li>
+        <li><strong>Final altitude:</strong> 251.522 km</li>
+      </ul>
+
+      <!-- Altitude vs Time Plot -->
+      <div class="row justify-content-center mt-4">
+        <div class="col-lg-6 text-center">
+          <figure class="figure">
+            <a href="Eimages/Alt_v_time_orbit.png" class="d-inline-block" title="Altitude vs Time Plot">
+              <img src="Eimages/Alt_v_time_orbit.png" alt="Altitude vs Time Plot" class="figure-img img-fluid">
+            </a>
+            <figcaption class="figure-caption text-center text-white mt-2">
+              Figure 1: Altitude vs Time
+            </figcaption>
+          </figure>
+          <p class="mt-3 text-white">The vertical lines mark the three mission phases. The first 3-day burn causes a sharp altitude drop. The coast phase is flat with orbital oscillations under gravity only. The final 1-day burn shows a smaller descent—thanks to reduced mass and duration. This demonstrates thrust altering orbital energy versus passive gravitational motion.</p>
+        </div>
+      </div>
+
+      <!-- Trajectory Plot -->
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-6 text-center">
+          <figure class="figure">
+            <a href="Eimages/Trajectory_orbit.png" class="d-inline-block" title="2-D Orbit Trajectory">
+              <img src="Eimages/Trajectory_orbit.png" alt="2-D Orbit Trajectory" class="figure-img img-fluid">
+            </a>
+            <figcaption class="figure-caption text-center text-white mt-2">
+              Figure 2: Spacecraft Deorbit Trajectory
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- MATLAB Downloads -->
+    <section class="mt-5 text-center" data-aos="fade-up" data-aos-duration="800">
+      <div class="btn-group" role="group" aria-label="Download MATLAB files">
+        <a href="Scripts/Earth_Rates_.m" class="btn btn-outline-primary" download="Earth_Rates_.m">Download Earth_Rates function</a>
+        <a href="Scripts/Burn_Coast_Burn.m" class="btn btn-outline-primary" download="Burn_Coast_Burn.m">Download Main Script</a>
+      </div>
+    </section>
+
+    <!-- Skills Demonstrated -->
+    <section class="mt-5" data-aos="fade-up" data-aos-duration="800">
+      <h3 class="text-primary mb-4">Skills Demonstrated</h3>
+      <ul class="fs-5">
+        <li>MATLAB simulation and scripting</li>
+        <li>Applied orbital mechanics theory</li>
+        <li>Technical plotting and data interpretation</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    window.addEventListener("load", function () {
+      document.querySelector(".preloader").style.display = "none";
+      AOS.init();
+    });
+  </script>
+</body>
+</html>
