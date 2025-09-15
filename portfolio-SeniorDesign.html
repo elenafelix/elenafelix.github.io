@@ -58,78 +58,66 @@
       <h3 class="display-6 fw-medium mb-3" data-aos="fade-up" data-aos-duration="1200">
         Senior Design <span class="text-primary">Showcase</span>
       </h3>
-      <p data-aos="fade-up" data-aos-duration="1400"> Presented a senior design project: a satellite designed for a 10-year mission to track water resources across the African continent. Contributed as part of the environmental, thermal, and propulsion subteam, collaborating with four engineers to evaluate propulsion options and develop strategies to withstand the extreme conditions of space demonstrating skills in systems engineering, modeling, and prototyping. </p>
+      <p data-aos="fade-up" data-aos-duration="1400">
+        Presented a senior design project: a satellite designed for a 10-year mission to track water resources across the African continent. Contributed as part of the environmental, thermal, and propulsion subteam, collaborating with four engineers to evaluate propulsion options and develop strategies to withstand the extreme conditions of space demonstrating skills in systems engineering, modeling, and prototyping.
+      </p>
     </div>
   </section>
 
+  <!-- Main Content with margins -->
+  <main class="container my-5">
 
-  <!-- Mission Overview -->
-    <h3 class="text-primary mb-3">Mission Overview</h3>
-    <p>
-      Our senior design project focused on developing a satellite for a 10-year mission
-      to track water resources across the African continent. The satellite was designed to
-      provide valuable data for climate research, agriculture, and resource management.
-    </p>
-  </section>
+    <!-- Mission Overview -->
+    <section data-aos="fade-up" class="mb-5">
+      <h3 class="text-primary mb-3">Mission Overview</h3>
+      <p>
+        Our senior design project focused on developing a satellite for a 10-year mission
+        to track water resources across the African continent. The satellite was designed to
+        provide valuable data for climate research, agriculture, and resource management.
+      </p>
+    </section>
 
-  <!-- Propulsion System -->
-  <section class="mb-5" data-aos="fade-up">
-    <h3 class="text-primary mb-3">Propulsion System</h3>
+    <!-- Propulsion System -->
+    <section data-aos="fade-up" class="mb-5">
+      <h3 class="text-primary mb-3">Propulsion System</h3>
+      <figure>
+        <img src="Images/IMG_2062.jpg" alt="Propulsion poster" class="img-fluid rounded shadow">
+        <figcaption class="mt-2">Propulsion system design poster.</figcaption>
+      </figure>
+      <figure class="mt-4">
+        <img src="Images/IMG_2076.jpg" alt="Team at poster" class="img-fluid rounded shadow">
+        <figcaption class="mt-2">With teammate Marissa Ezzell during showcase.</figcaption>
+      </figure>
+    </section>
 
-        <figure>
-          <img src="Images/IMG_2062.jpg" alt="Propulsion poster" class="img-fluid rounded shadow">
-          <figcaption class="mt-2">Propulsion system  design poster.</figcaption>
-        </figure>
-     </section>
- 
-        <figure>
-          <img src="Images/IMG_2076.jpg" alt="Team at poster" class="img-fluid rounded shadow">
-          <figcaption class="mt-2">With teammate Marissa Ezzell during showcase.</figcaption>
-        </figure>
-  </section>
+    <!-- Thermal & Environmental Systems -->
+    <section data-aos="fade-up" class="mb-5">
+      <h3 class="text-primary mb-3">Thermal & Environmental Systems</h3>
+      <p>
+        To visualize our design, our class team created a 3D-printed small-scale satellite model.
+        This allowed us to present subsystem integration at the showcase.
+      </p>
+      <figure>
+        <img src="Images/IMG_2089.jpg" alt="3D printed satellite" class="img-fluid rounded shadow">
+        <figcaption class="mt-2">With teammate Cassandra Herrera and 3D-printed satellite design.</figcaption>
+      </figure>
+      <figure class="mt-4">
+        <img src="Images/IMG_2080.jpg" alt="Thermal poster" class="img-fluid rounded shadow">
+        <figcaption class="mt-2">Thermal and environmental system design poster.</figcaption>
+      </figure>
+    </section>
 
-  <!-- Thermal & Environmental Systems -->
-  <section class="mb-5" data-aos="fade-up">
-    <h3 class="text-primary mb-3">Thermal & Environmental Systems</h3>
-      <!-- Satellite Model -->
-    <p>
-      To visualize our design, our class team created a 3D-printed small-scale satellite model.
-      This allowed us to present subsystem integration at the showcase.
-    </p>
-    <figure>
-      <img src="Images/IMG_2089.jpg" alt="3D printed satellite" class="img-fluid rounded shadow">
-      <figcaption class="mt-2">With teammate Cassandra Herrera and 3D-printed satellite design.</figcaption>
-    </figure>
-  </section>
+  </main>
 
-    <figure>
-      <img src="Images/IMG_2080.jpg" alt="Thermal poster" class="img-fluid rounded shadow">
-      <figcaption class="mt-2">Thermal and environmental system design poster.</figcaption>
-    </figure>
-  </section>
-
-</main>
-
-
-
-    <!-- script ================================================== -->
-    <script src="js/jquery-1.11.0.min.js"></script>
-
-    <!-- Bootstarp script ================================================== -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-
-    <!-- Swiper script ================================================== -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-    <!--iconify script ================================================== -->
-    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
-
-
-    <script src="js/plugins.js"></script>
-    <script src="js/script.js"></script>
-
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    window.addEventListener("load", function () {
+      document.querySelector(".preloader").style.display = "none";
+      AOS.init();
+    });
+  </script>
 </body>
-
 </html>
+
