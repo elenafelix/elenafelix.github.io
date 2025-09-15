@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elena Felix – Senior Design Project</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader"><div class="loader"></div></div>
+
+  <!-- Navigation -->
+  <nav id="header-nav" class="navbar navbar-expand-lg py-4" data-bs-theme="dark">
+    <div class="container-fluid padding-side">
+      <a class="navbar-brand fw-bold fs-1 text-white" href="index.html">Elena Felix</a>
+      <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Menu</h5>
+          <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link active pe-lg-5" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link pe-lg-5" href="about.html">About</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link pe-lg-5 dropdown-toggle" href="#" data-bs-toggle="dropdown">Portfolio</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="portfolio-masonry.html">Portfolio-Masonry</a></li>
+                <li><a class="dropdown-item" href="portfolio-details.html">Portfolio-Details</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero / Overview Section -->
+  <section id="hero" class="padding-medium position-relative text-white">
+    <div class="container-fluid padding-side text-center">
+      <nav class="breadcrumb d-inline-flex justify-content-center" data-bs-theme="dark" data-aos="fade-up" data-aos-duration="1000">
+        <a class="breadcrumb-item" href="index.html">Home</a>
+        <span class="breadcrumb-item active">Portfolio – Senior Design Project</span>
+      </nav>
+      <h3 class="display-6 fw-medium mb-3" data-aos="fade-up" data-aos-duration="1200">
+        Senior Design <span class="text-primary">Showcase</span>
+      </h3>
+      <p data-aos="fade-up" data-aos-duration="1400"> Presented a senior design project: a satellite designed for a 10-year mission to track water resources across the African continent. Contributed as part of the environmental, thermal, and propulsion subteam, collaborating with four engineers to evaluate propulsion options and develop strategies to withstand the extreme conditions of space demonstrating skills in systems engineering, modeling, and prototyping. </p>
+    </div>
+  </section>
+
+
+  <!-- Mission Overview -->
+    <h3 class="text-primary mb-3">Mission Overview</h3>
+    <p>
+      Our senior design project focused on developing a satellite for a 10-year mission
+      to track water resources across the African continent. The satellite was designed to
+      provide valuable data for climate research, agriculture, and resource management.
+    </p>
+  </section>
+
+  <!-- Propulsion System -->
+  <section class="mb-5" data-aos="fade-up">
+    <h3 class="text-primary mb-3">Propulsion System</h3>
+
+        <figure>
+          <img src="Images/IMG_2062.jpg" alt="Propulsion poster" class="img-fluid rounded shadow">
+          <figcaption class="mt-2">Propulsion system  design poster.</figcaption>
+        </figure>
+     </section>
+ 
+        <figure>
+          <img src="Images/IMG_2076.jpg" alt="Team at poster" class="img-fluid rounded shadow">
+          <figcaption class="mt-2">With teammate Marissa Ezzell during showcase.</figcaption>
+        </figure>
+  </section>
+
+  <!-- Thermal & Environmental Systems -->
+  <section class="mb-5" data-aos="fade-up">
+    <h3 class="text-primary mb-3">Thermal & Environmental Systems</h3>
+      <!-- Satellite Model -->
+    <p>
+      To visualize our design, our class team created a 3D-printed small-scale satellite model.
+      This allowed us to present subsystem integration at the showcase.
+    </p>
+    <figure>
+      <img src="Images/IMG_2089.jpg" alt="3D printed satellite" class="img-fluid rounded shadow">
+      <figcaption class="mt-2">With teammate Cassandra Herrera and 3D-printed satellite design.</figcaption>
+    </figure>
+  </section>
+
+    <figure>
+      <img src="Images/IMG_2080.jpg" alt="Thermal poster" class="img-fluid rounded shadow">
+      <figcaption class="mt-2">Thermal and environmental system design poster.</figcaption>
+    </figure>
+  </section>
+
+</main>
+
+
+
+    <!-- script ================================================== -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+
+    <!-- Bootstarp script ================================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper script ================================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!--iconify script ================================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+
+
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
